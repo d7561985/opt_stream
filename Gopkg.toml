@@ -56,6 +56,4 @@
 [metadata.heroku]
   root-package = "github.com/d7561985/opt_stream"
   go-version = "go1.11"
-  install = [ "./bin/..."]
   ensure = "false"
-  additional-tools = ["github.com/d7561985/opt_stream"]
