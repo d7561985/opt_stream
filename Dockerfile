@@ -4,6 +4,7 @@ COPY . /app
 WORKDIR /app
 
 # Setup buildpack
+RUN make
 RUN mkdir -p /tmp/buildpack/heroku/go /tmp/build_cache /tmp/env
 RUN curl https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/go.tgz | tar xz -C /tmp/buildpack/heroku/go
 
