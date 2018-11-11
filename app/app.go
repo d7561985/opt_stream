@@ -113,7 +113,7 @@ func Run() {
 	}
 
 	app.Run(
-		iris.Addr(":"+*P),
+		iris.Addr(":"+port),
 		iris.WithOptimizations,
 	)
 }
