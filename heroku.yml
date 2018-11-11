@@ -3,3 +3,6 @@
 build:
   languages:
     - go
+
+run:
+  web: opt

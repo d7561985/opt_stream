@@ -1,9 +1,9 @@
 package app
 
 import (
-	"dima/opt/models"
 	"flag"
 	"github.com/RichardKnop/uuid"
+	"github.com/d7561985/opt_stream/models"
 	"github.com/icrowley/fake"
 	"github.com/iris-contrib/middleware/cors"
 	"github.com/kataras/iris"
@@ -74,7 +74,6 @@ func Initialize() {
 				}
 
 				context.JSON(&models.Request{Data: res})
-
 				context.ResponseWriter().Flush()
 
 				t := time.After(time.Second * 5)

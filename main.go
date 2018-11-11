@@ -1,7 +1,7 @@
 package main
 
 import (
-	"dima/opt/app"
+	"github.com/d7561985/opt_stream/app"
 	"github.com/prometheus/common/version"
 	"github.com/rs/zerolog/log"
 )

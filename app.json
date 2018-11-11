@@ -1,0 +1,12 @@
+{
+  "name": "Opt Server",
+  "description": "One point fake stream server",
+  "keywords": [
+    "stream",
+    "go",
+    "sample",
+    "example"
+  ],
+  "website": "https://github.com/d7561985/opt_stream",
+  "repository": "https://github.com/d7561985/opt_stream"
+}
