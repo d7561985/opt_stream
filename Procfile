@@ -1,1 +1,1 @@
-web: opt_stream
+web: opt
