@@ -99,11 +99,11 @@ func Run() {
 		log.Panic().Msg("no initialization")
 	}
 
-	P := flag.String("PORT", ":8081", ":8081")
+	P := flag.String("PORT", "8081", "8081")
 	flag.Parse()
 
 	app.Run(
-		iris.Addr(*P),
+		iris.Addr(":"+*P),
 		iris.WithOptimizations,
 	)
 }
