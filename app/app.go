@@ -11,6 +11,7 @@ import (
 	"github.com/rs/zerolog/log"
 	"io"
 	"math/rand"
+	"os"
 	"time"
 )
 
@@ -101,6 +102,15 @@ func Run() {
 
 	P := flag.String("PORT", "8081", "8081")
 	flag.Parse()
+
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		port = *P
+		if port == "" {
+			log.Printf("$PORT must be set")
+		}
+	}
 
 	app.Run(
 		iris.Addr(":"+*P),
